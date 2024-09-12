@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/emote2.png"
+					alt="emote apple"
+				/>
+			</Hero>
+
+	
+				<div class="content">
+					<p>
+						Jeune développeur, je viens de finaliser mon parcours en Master 2 spécialité <span style="color: #FFCA69;"><strong> Internet des Objets et Cybersécurité </strong></span> à l'université de Lille. 
+						Je suis passionné par la programmation, le web et les nouvelles technologies. <br />
+						
+					</p>
+					<p>
+						<br />
+						J'aime le sport et notament le basket que j'ai pratiqué pendant huit ans en club.
+						Ainsi j'ai eu l'occasion de développer mon esprit d'équipe et le sens de la compétition. <br />
+						
+						Actuellement je pratique la musculation. j'apprécie ce sport car il nécéssite rigueur et discipline pour modeler tant le corps que l'esprit. <br />
+
+					
+						Je suis de nature curieuse.  
+						je considère Internet comme une puissante ressource qui me permet de me former de manière autonome.
+						Cela m'a d'ailleurs permis d'obtenir mon baccalauréat en candidat libre. 
+					</p>
+					<p>
+						<br /> Ma créativité et ma sensibilité artistique sont également des atouts qui me définissent.
+						J'aime explorer de nouvelles idées et approches pour exprimer ma vision artistique. <br />
+					</p>
+					<p>
+						<br />Mon parcours académique et mon expérience personnelle m'ont forgé en un individu curieux, autonome, déterminé, et enclin à la compétition. 
+						Je suis convaincu que cette combinaison de compétences et de traits de caractère me permettra de relever les défis qui se présentent à moi et de continuer à grandir dans mon parcours professionnel.
+					</p>
+				</div>
+			
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		font-size: 1.4em;
+		grid-column: 1 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
