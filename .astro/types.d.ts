@@ -210,6 +210,13 @@ declare module 'astro:content' {
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
+"panorama.md": {
+	id: "panorama.md";
+  slug: "panorama";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
 "perfHex.md": {
 	id: "perfHex.md";
   slug: "perfhex";
