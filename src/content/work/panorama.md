@@ -24,14 +24,14 @@ L’objectif était de concevoir une plateforme moderne, responsive et facile à
 - **Hébergement** : Railway (Strapi) + Vercel (Frontend)  
 - **Médias** : Cloudinary  
 
-#### ✨ Fonctionnalités
+##### ✨ Fonctionnalités
 - Contenus dynamiques gérés via Strapi (services, projets, partenaires, actualités)  
 - Intégration d’un back-office simple et intuitif pour l’équipe Panorama  
 - Design responsive (desktop, tablette, mobile)  
 - Optimisation SEO (balises meta, structure sémantique)  
 - Gestion des images et vidéos via Cloudinary  
 
-#### 👤 Mon rôle
+##### 👤 Mon rôle
 Développement **from scratch** du projet :  
 - Conception du design et des maquettes 
 - Conception technique et mise en place de l’architecture (front + CMS)  
