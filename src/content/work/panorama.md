@@ -40,4 +40,4 @@ Développement **from scratch** du projet :
 - Mise en place de l’hébergement et déploiement continu  
 - Support et formation client pour la prise en main du CMS 
 
-#####  lien github du projet : [Panorama](https://github.com/yoniGdr/panorama-site).
+#####  lien du site : [Panorama](https://www.panorama-be.com/).

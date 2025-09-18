@@ -6,8 +6,6 @@ img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
 
 tags:
-  - Stage
-  - Application
   - React
   - MySQL
   - Node
